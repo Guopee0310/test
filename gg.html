@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次作業</title>
+</head>
+<body>
+    <h2>hw04</h2>
+    <script>
+        var ppk=30;
+        var k=20;
+        var amount = ppk*k;
+        if( amount > 500 ){
+        amount=amount*0.9;
+        }
+        document.write(`${amount}<br>`);
+    </script>
+    
+   
+   <h2>hw05</h2>
+   <script>
+       var ppk=30;
+       var k=60;
+       var amount = ppk*k;
+       if( amount > 1000 ){
+       amount=amount*0.7;
+       }else if(amount > 500){
+        amount=amount*0.9
+       }
+       document.write(`${amount}<br>`);
+   </script>
+
+
+<h2>hw06</h2>
+   <script>
+       var k=60;
+       var fclass = "2";
+       var amount;
+       if( fclass === "1" ){
+         if( k>100){
+            amount=k*20;
+         }else if( k>40 ){
+            amount=k*25;
+         }else {
+            amount=k*30;
+         }
+        }
+       if( fclass === "2" ){
+         if( k>100){
+            amount=k*15;
+         }else if( k>40 ){
+            amount=k*20;
+         }else {
+            amount=k*25;
+         }
+        }
+        if( fclass === "3" ){
+         if( k>100){
+            amount=k*10;
+         }else if( k>40 ){
+            amount=k*15;
+         }else {
+            amount=k*20;
+         }
+        }
+       document.write(`${amount}<br>`);
+   </script>
+
+   <h2>hw07</h2>
+   <script>
+    var i = 1
+    var x = 5
+    var sum = 0
+	do{
+	sum+= i;
+	i++;
+}while(i <= x )
+document.write(`${sum}<br>`);
+
+</script>
+
+<script>
+    var i = 1
+    var x = 5
+    var sumodd = 0
+    do{
+    sumodd+= i;
+	i+= 2;
+}while(i <= x )
+document.write(`${sumodd}<br>`);
+</script>
+
+<script>
+    var i = 0
+    var x = 5
+    var sumeven = 0
+    do{
+    sumeven+= i;
+	i+= 2;
+}while(i <= x )
+document.write(`${sumeven}<br>`);
+</script>
+
+<h2>hw07寫一起</h2>
+<script>
+   var i = 0
+   var x = 5
+   var sumeven 
+   if (i%2 ==0){
+      sumevenZ+
+   }
+
+document.write(`${sumeven}<br>`);
+</script>
+
+
+
+      
+<h2>hw08</h2>
+<script>
+//(1)
+// let min = 0;
+// let max = 11;
+// let num1 = console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+//(2)
+var numb;
+var sum = 0;
+for (let i = 0 ; i < 10 ; i++ ){
+    numb = parseInt(Math.random()*11);
+    document.write(`第${i+1}次${numb}<br>`);
+    sum+= numb;
+}
+document.write(`total${sum}<br>`);
+</script>
+
+
+</body>
+</html>
